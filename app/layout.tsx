@@ -1,9 +1,11 @@
-import { ClerkProvider } from '@/components/clerk-provider';
-import { Header } from '@/components/header';
-import { ThemeProvider } from '@/components/theme-provider';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+
+import { ConvexClientProvider } from "./ConvexClientProvider";
+import { ClerkProvider } from '@/components/clerk-provider';
+import { ThemeProvider } from '@/components/theme-provider';
+import { Header } from '@/components/header';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -33,6 +35,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <body className={`${geistSans.variable} ${geistMono.variable} flex min-h-full flex-col antialiased`}>
+          <ConvexClientProvider>
           <ThemeProvider
             attribute='class'
             defaultTheme='system'
@@ -42,6 +45,7 @@ export default function RootLayout({
             <Header />
             {children}
           </ThemeProvider>
+          </ConvexClientProvider>
         </body>
       </html>
     </ClerkProvider>
