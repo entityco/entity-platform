@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Entity Platform
 
-## Getting Started
+**Entity** is a reasoning-first decision intelligence platform for teams.
 
-First, run the development server:
+It helps users go from **context → intent → structured reasoning → evidence → decisions**, with full transparency into *how* a conclusion was reached.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Unlike traditional dashboards or chat-only AI tools, Entity treats reasoning as a **first-class artifact**: inspectable, reproducible, and auditable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What Entity Does
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+At a high level, Entity lets you:
 
-## Learn More
+1. Create a **project**
+2. Provide **context** (documents, data sources, assumptions)
+3. Specify an **intent** (the decision or question you want to resolve)
+4. Run structured **reasoning workflows**
+5. Get a **decision output**, backed by:
 
-To learn more about Next.js, take a look at the following resources:
+   * Evidence
+   * Data insights & charts
+   * A traceable reasoning graph
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Everything is observable and reviewable.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Core Concepts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Workflow**: Graph-based reasoning and data operations (RPA + agents)
+* **Reasoning**: Step-by-step hypothesis formation and evaluation
+* **Evidence**: Explicit links to data, sources, and intermediate analysis
+* **Artifacts**: Charts, tables, dashboards, and decision memos
+* **Observability**: Full trace of what ran, why it ran, and what changed
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Product Philosophy
+
+* Chat is the primary interface
+* Reasoning should never be a black box
+* Decisions should be explainable, not just plausible
+* Systems should be reproducible and auditable by default
+
+Entity is built for founders, operators, analysts, and teams making high-stakes decisions.
+
+---
+
+## Vision
+
+Entity aims to become the canonical system for **decision intelligence** — where reasoning, data, and judgment converge in a single, transparent workflow.
+
+
