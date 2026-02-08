@@ -355,10 +355,9 @@ const AttachmentItem = ({
   }, [onRemove, attachment.id]);
 
   return (
-    <Attachment data={attachment} onRemove={handleRemove}>
-      <AttachmentPreview />
-      <AttachmentRemove />
-    </Attachment>
+    <>
+    
+    </>
   );
 };
 
@@ -377,15 +376,9 @@ const PromptInputAttachmentsDisplay = () => {
   }
 
   return (
-    <Attachments variant="inline">
-      {attachments.files.map((attachment) => (
-        <AttachmentItem
-          attachment={attachment}
-          key={attachment.id}
-          onRemove={handleRemove}
-        />
-      ))}
-    </Attachments>
+    <>
+      
+    </>
   );
 };
 
