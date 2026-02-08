@@ -20,7 +20,7 @@ export default function LandingPage() {
 
 function Hero() {
   return (
-    <section className="relative flex min-h-[90vh] items-center justify-center bg-gradient-to-b from-black via-neutral-950 to-neutral-900 text-white">
+    <section className="relative flex min-h-[90vh] items-center justify-center bg-linear-to-b from-black via-neutral-950 to-neutral-900 text-white">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
           AI changed how we build.
