@@ -1,6 +1,8 @@
 // app/demo/page.tsx
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 
-export default function DemoRedirectPage() {
-  redirect("https://demo.entityhq.co");
+export const dynamic = "force-dynamic";
+
+export default function DemoRedirect() {
+  permanentRedirect("https://demo.entityhq.co");
 }
