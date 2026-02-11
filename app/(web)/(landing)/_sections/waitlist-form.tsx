@@ -133,19 +133,8 @@ export default function WaitlistForm() {
               )}
             </AnimatePresence>
 
-            <div className="relative z-10 flex flex-wrap items-center justify-center gap-8 mt-10 pt-8 border-t border-white/5">
-              <div className="flex items-center gap-2 text-neutral-500 text-sm">
-                <Users className="w-4 h-4" />
-                <span>500+ startups waiting</span>
-              </div>
-              <div className="flex items-center gap-2 text-neutral-500 text-sm">
-                <Zap className="w-4 h-4" />
-                <span>No credit card required</span>
-              </div>
-              <div className="flex items-center gap-2 text-neutral-500 text-sm">
-                <Sparkles className="w-4 h-4" />
-                <span>Priority access</span>
-              </div>
+            <div className="relative z-10 flex flex-wrap items-center justify-center gap-8 mt-10 pt-8">
+              
             </div>
           </div>
         </motion.div>
