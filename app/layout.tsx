@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter, IBM_Plex_Mono } from "next/font/google"
 import './globals.css';
 
 import { ConvexClientProvider } from "./ConvexClientProvider";
@@ -7,18 +7,20 @@ import { ClerkProvider } from '@/components/clerk-provider';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/header';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: '--font-plex-mono',
+  weight: "300",
   subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: 'Entity – Reasoning AI for Team Decisions',
+  title: 'Entity – AI co-scientist for Applied Scientists',
   description: 'Entity is a reasoning-first AI platform for teams to high stack decisions effortlessly',
 };
 
@@ -34,7 +36,7 @@ export default function RootLayout({
         className='h-full'
         suppressHydrationWarning
       >
-        <body className={`${geistSans.variable} ${geistMono.variable} flex min-h-full flex-col antialiased`}>
+        <body className={`${inter.variable} ${ibmPlexMono.variable} flex min-h-full flex-col antialiased`}>
           <ConvexClientProvider>
           <ThemeProvider
             attribute='class'
